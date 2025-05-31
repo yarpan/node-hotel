@@ -1,4 +1,5 @@
 const swaggerJSDoc = require('swagger-jsdoc');
+const path = require('path');
 
 const options = {
   definition: {
@@ -6,7 +7,7 @@ const options = {
     info: {
       title: 'Hotel Management API',
       version: '1.0.0',
-      description: 'API для управління готелем: бронювання, кімнати, гості, авторизація.',
+      description: 'API for hotel managment system',
     },
     servers: [
       {
@@ -29,7 +30,7 @@ const options = {
       },
     ],
   },
-  apis: ['./routes/*.js'], // включає всі файли з маршрутами
+  apis: [path.join(__dirname, '../routes/**/*.js')]
 };
 
 const swaggerSpec = swaggerJSDoc(options);
