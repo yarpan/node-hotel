@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const guestsRoutes = require('./routes/guestsRoutes');
 const roomsRoutes = require('./routes/roomsRoutes');
 const bookingsRoutes = require('./routes/bookingsRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 dotenv.config();
 const app = express();
@@ -10,6 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
+app.use('/api/auth', authRoutes);
 app.use('/api/guests', guestsRoutes);
 app.use('/api/rooms', roomsRoutes);
 app.use('/api/bookings', bookingsRoutes);

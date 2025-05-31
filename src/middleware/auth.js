@@ -1,9 +1,16 @@
+const jwt = require('jsonwebtoken');
+
 module.exports = (req, res, next) => {
-  // Проста перевірка, наприклад токена в заголовках
-  const token = req.headers['authorization'];
-  if (token === 'Bearer test-token') {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader?.split(' ')[1];
+
+  if (!token) return res.status(401).json({ error: 'No token provided' });
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.userId = decoded.userId;
     next();
-  } else {
-    res.status(401).json({ error: 'Unauthorized' });
+  } catch {
+    res.status(403).json({ error: 'Invalid or expired token' });
   }
 };
