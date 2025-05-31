@@ -1,4 +1,4 @@
--- Створення таблиці гостей
+
 CREATE TABLE IF NOT EXISTS guests (
     id SERIAL PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
@@ -7,16 +7,16 @@ CREATE TABLE IF NOT EXISTS guests (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Створення таблиці кімнат
+
 CREATE TABLE IF NOT EXISTS rooms (
     id SERIAL PRIMARY KEY,
     room_number VARCHAR(10) UNIQUE NOT NULL,
-    type VARCHAR(50) NOT NULL, -- Наприклад: single, double, suite
+    type VARCHAR(50) NOT NULL,
     price_per_night NUMERIC(10, 2) NOT NULL,
     is_active BOOLEAN DEFAULT TRUE
 );
 
--- Створення таблиці бронювань
+
 CREATE TABLE IF NOT EXISTS bookings (
     id SERIAL PRIMARY KEY,
     guest_id INTEGER REFERENCES guests(id) ON DELETE CASCADE,
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS bookings (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Таблиця користувачів
+
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   username VARCHAR(100) UNIQUE NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE users (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Таблиця для зберігання активних refresh-токенів
+
 CREATE TABLE refresh_tokens (
   id SERIAL PRIMARY KEY,
   user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
