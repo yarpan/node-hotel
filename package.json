@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "generate": "node utils/generate-docs.js",
+    "swagger-to-postman": "openapi2postmanv2 -s docs/swagger.json -o docs/postman_collection.json -p"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +16,9 @@
     "bcrypt": "^6.0.0",
     "dotenv": "^16.5.0",
     "express": "^4.21.2",
+    "fs-extra": "^11.3.0",
     "jsonwebtoken": "^9.0.2",
+    "openapi-to-postmanv2": "^5.0.0",
     "pg": "^8.16.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",

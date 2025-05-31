@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const bookingsController = require('../controllers/bookingsController');
-const auth = require('../middleware/auth');
 
 /**
  * @swagger
@@ -20,29 +19,11 @@ const auth = require('../middleware/auth');
  *       - bearerAuth: []
  *     responses:
  *       200:
- *         description: List of bookings
+ *         description: List of all bookings
+ *       401:
+ *         description: Unauthorized
  */
-router.get('/', auth, bookingsController.getAll);
-
-/**
- * @swagger
- * /api/bookings/{id}:
- *   get:
- *     tags: [Bookings]
- *     summary: Get booking by ID
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: integer
- *     responses:
- *       200:
- *         description: Booking details
- */
-router.get('/:id', auth, bookingsController.getById);
+router.get('/', bookingsController.getAll);
 
 /**
  * @swagger
@@ -74,11 +55,44 @@ router.get('/:id', auth, bookingsController.getById);
  *               check_out_date:
  *                 type: string
  *                 format: date
+ *           example:
+ *             guest_id: 1
+ *             room_id: 2
+ *             check_in_date: "2025-06-01"
+ *             check_out_date: "2025-06-05"
  *     responses:
  *       201:
  *         description: Booking created
+ *       400:
+ *         description: Invalid input
+ *       401:
+ *         description: Unauthorized
  */
-router.post('/', auth, bookingsController.create);
+router.post('/', bookingsController.create);
+
+/**
+ * @swagger
+ * /api/bookings/{id}:
+ *   get:
+ *     tags: [Bookings]
+ *     summary: Get booking by ID
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: Booking found
+ *       401:
+ *         description: Unauthorized
+ *       404:
+ *         description: Booking not found
+ */
+router.get('/:id', bookingsController.getById);
 
 /**
  * @swagger
@@ -111,11 +125,46 @@ router.post('/', auth, bookingsController.create);
  *               check_out_date:
  *                 type: string
  *                 format: date
+ *           example:
+ *             guest_id: 1
+ *             room_id: 2
+ *             check_in_date: "2025-06-02"
+ *             check_out_date: "2025-06-06"
  *     responses:
  *       200:
  *         description: Booking updated
+ *       400:
+ *         description: Invalid input
+ *       401:
+ *         description: Unauthorized
+ *       404:
+ *         description: Booking not found
  */
-router.put('/:id', auth, bookingsController.update);
+router.put('/:id', bookingsController.update);
+
+/**
+ * @swagger
+ * /api/bookings/{id}:
+ *   delete:
+ *     tags: [Bookings]
+ *     summary: Delete a booking
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       204:
+ *         description: Booking deleted
+ *       401:
+ *         description: Unauthorized
+ *       404:
+ *         description: Booking not found
+ */
+router.delete('/:id', bookingsController.remove);
 
 /**
  * @swagger
@@ -127,16 +176,26 @@ router.put('/:id', auth, bookingsController.update);
  *       - bearerAuth: []
  *     parameters:
  *       - in: query
- *         name: date
+ *         name: check_in_date
+ *         required: true
+ *         schema:
+ *           type: string
+ *           format: date
+ *       - in: query
+ *         name: check_out_date
  *         required: true
  *         schema:
  *           type: string
  *           format: date
  *     responses:
  *       200:
- *         description: List of available rooms
+ *         description: Available rooms
+ *       400:
+ *         description: Invalid date format
+ *       401:
+ *         description: Unauthorized
  */
-router.get('/available-rooms', auth, bookingsController.getAvailableRooms);
+router.get('/available-rooms', bookingsController.getAvailableRooms);
 
 /**
  * @swagger
@@ -152,12 +211,15 @@ router.get('/available-rooms', auth, bookingsController.getAvailableRooms);
  *         required: true
  *         schema:
  *           type: string
- *           example: 2025-04
+ *           example: "2025-06"
  *     responses:
  *       200:
- *         description: Total revenue
+ *         description: Revenue data
+ *       400:
+ *         description: Invalid month format
+ *       401:
+ *         description: Unauthorized
  */
-router.get('/revenue', auth, bookingsController.getMonthlyRevenue);
+router.get('/revenue', bookingsController.getRevenue);
 
 module.exports = router;
-

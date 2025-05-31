@@ -57,7 +57,12 @@ router.post('/register', authController.register);
  *                 type: string
  *     responses:
  *       200:
- *         description: Tokens returned
+ *         description: Authenticated successfully
+ *         content:
+ *           application/json:
+ *             example:
+ *               accessToken: "ey..."
+ *               refreshToken: "ey..."
  */
 router.post('/login', authController.login);
 
@@ -81,6 +86,8 @@ router.post('/login', authController.login);
  *     responses:
  *       200:
  *         description: New access token returned
+ *       401:
+ *         description: Unauthorized
  */
 router.post('/refresh', authController.refreshToken);
 
@@ -95,6 +102,8 @@ router.post('/refresh', authController.refreshToken);
  *     responses:
  *       200:
  *         description: Logout successful
+ *       401:
+ *         description: Unauthorized
  */
 router.post('/logout', authController.logout);
 
