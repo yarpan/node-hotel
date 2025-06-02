@@ -644,6 +644,52 @@
         }
       }
     },
+    "/api/guests/{id}/bookings/count": {
+      "get": {
+        "tags": [
+          "Guests"
+        ],
+        "summary": "Get number of bookings for a guest",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Booking count returned",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Guest not found"
+          }
+        }
+      }
+    },
     "/api/rooms": {
       "get": {
         "tags": [

@@ -1,3 +1,4 @@
+require('dotenv-flow').config();
 const express = require('express');
 const dotenv = require('dotenv');
 const swaggerUi = require('swagger-ui-express');

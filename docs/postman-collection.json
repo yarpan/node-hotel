@@ -1,7 +1,7 @@
 {
   "item": [
     {
-      "id": "15ba27f5-2ffc-4b15-b556-7673ee45d3a4",
+      "id": "f44801ee-2e5e-4f79-9874-303ccba10aa4",
       "name": "Auth",
       "description": {
         "content": "Authentication routes",
@@ -9,7 +9,7 @@
       },
       "item": [
         {
-          "id": "b4575030-cf71-43b3-b372-cb989d18a0ab",
+          "id": "d6811ac7-a720-4731-aa19-f03f92a66519",
           "name": "Register a new user",
           "request": {
             "name": "Register a new user",
@@ -54,7 +54,7 @@
           },
           "response": [
             {
-              "id": "96cc1671-0a84-435f-a5d4-00b4e7a9d6cb",
+              "id": "5525c8c7-aae6-42ea-8df0-9197b2f8a596",
               "name": "User created",
               "originalRequest": {
                 "url": {
@@ -108,7 +108,7 @@
           }
         },
         {
-          "id": "5fdc1aa3-a689-46e1-b141-2f59e64df9e7",
+          "id": "7d6110ce-2548-451c-8f6c-415da4b3e715",
           "name": "User login",
           "request": {
             "name": "User login",
@@ -148,7 +148,7 @@
           },
           "response": [
             {
-              "id": "d311b64b-e0c7-4250-81ff-30f35a98dcd2",
+              "id": "11ec56e0-c968-4173-8648-7a76d90f07d6",
               "name": "Authenticated successfully",
               "originalRequest": {
                 "url": {
@@ -217,7 +217,7 @@
           }
         },
         {
-          "id": "dcd9d037-019c-4a05-b623-602d7e902acd",
+          "id": "4f735c68-c322-415f-8ec6-74987fabc421",
           "name": "Refresh access token",
           "request": {
             "name": "Refresh access token",
@@ -262,7 +262,7 @@
           },
           "response": [
             {
-              "id": "f614a2e1-d6f6-4dc2-b39b-a873473f9f4f",
+              "id": "b8f1ccfc-eaab-4c89-a54d-a75c2d460e15",
               "name": "New access token returned",
               "originalRequest": {
                 "url": {
@@ -310,7 +310,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "510a9235-ae8d-49c5-8cb3-ab6787ce5d0c",
+              "id": "8a71f2e2-bf03-4b88-9bb3-6eca15904130",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -364,7 +364,7 @@
           }
         },
         {
-          "id": "fc250b46-e017-4b96-9df4-781d54444c41",
+          "id": "cfe8cc5a-d7ac-428b-a9a1-2728479e2243",
           "name": "Logout user (clear refresh token)",
           "request": {
             "name": "Logout user (clear refresh token)",
@@ -394,7 +394,7 @@
           },
           "response": [
             {
-              "id": "389ebf7f-2a46-4e38-b266-50fead660b18",
+              "id": "630841f9-6fd7-4e5f-b40c-4c57cbdb3474",
               "name": "Logout successful",
               "originalRequest": {
                 "url": {
@@ -434,7 +434,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "9799b259-3c61-43de-b4df-f9cb4f786b04",
+              "id": "a0a9adb3-7516-4e16-a40e-7422ff6ad10b",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -483,7 +483,7 @@
       "event": []
     },
     {
-      "id": "ef7f7baa-848f-4253-8aa1-57b511ebe258",
+      "id": "136c91d5-2ac4-4e68-b355-87731c1fbe69",
       "name": "Bookings",
       "description": {
         "content": "Room bookings",
@@ -491,7 +491,7 @@
       },
       "item": [
         {
-          "id": "ddfc9e69-b362-4367-a041-991dc5b2794f",
+          "id": "6bd9c1fc-ef1e-4e93-b995-b563f9c01a74",
           "name": "Get all bookings",
           "request": {
             "name": "Get all bookings",
@@ -521,7 +521,7 @@
           },
           "response": [
             {
-              "id": "121f907b-5eb6-4808-b332-69d6f615a223",
+              "id": "5d9ea7f2-d914-483b-8a18-6d8de5d365b5",
               "name": "List of all bookings",
               "originalRequest": {
                 "url": {
@@ -561,7 +561,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "085c74ba-c978-45c1-a732-ea11f56ba399",
+              "id": "caead4b9-b875-4c33-84d0-74b9f27dea36",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -607,7 +607,7 @@
           }
         },
         {
-          "id": "a4934dec-0b6c-498c-948e-eb63232df426",
+          "id": "6e660a15-351f-4426-9836-ec1f74b56134",
           "name": "Create a booking",
           "request": {
             "name": "Create a booking",
@@ -652,7 +652,7 @@
           },
           "response": [
             {
-              "id": "36a9aa54-68f6-4276-8322-d3aca4b29c5d",
+              "id": "a66fe918-a878-4b27-b774-6f15444e5667",
               "name": "Booking created",
               "originalRequest": {
                 "url": {
@@ -700,7 +700,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "bb68b157-515b-4879-9a22-0ab989c2ecc8",
+              "id": "ccdb82a2-9981-4497-9182-dcfa2a6bcf7f",
               "name": "Invalid input",
               "originalRequest": {
                 "url": {
@@ -748,7 +748,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "9ab1be14-2d63-4c9c-a9a5-8b73c6fb75db",
+              "id": "f6737640-db59-421b-bf26-5676d7d2b520",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -802,7 +802,7 @@
           }
         },
         {
-          "id": "a9b66a8b-ea7b-443a-8d8b-fd2699c37bdb",
+          "id": "af57cb7b-1e53-4c65-a996-5a96e7656c26",
           "name": "Get booking by ID",
           "request": {
             "name": "Get booking by ID",
@@ -841,7 +841,7 @@
           },
           "response": [
             {
-              "id": "d6afaa01-4acb-41cb-9e48-796c1bdfba71",
+              "id": "5d459af5-9deb-427e-8ed3-c0d639852ff4",
               "name": "Booking found",
               "originalRequest": {
                 "url": {
@@ -890,7 +890,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "03887e48-1045-4f1d-99d2-ae68bd99d115",
+              "id": "beab91be-9c84-44b9-94d8-98043a64fb30",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -939,7 +939,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "42dfbe88-3b4b-44e3-9f41-dd270a4890dc",
+              "id": "2024652d-ab0b-4d2f-a576-38681e47d9e7",
               "name": "Booking not found",
               "originalRequest": {
                 "url": {
@@ -994,7 +994,7 @@
           }
         },
         {
-          "id": "0116791f-a137-4e3d-8149-4a6cda6cba6b",
+          "id": "2290e1c8-01f8-402a-a37a-b7a7e6dcefcc",
           "name": "Update a booking",
           "request": {
             "name": "Update a booking",
@@ -1048,7 +1048,7 @@
           },
           "response": [
             {
-              "id": "15983ff5-432a-450e-9836-6becea38c7db",
+              "id": "09b397f6-f4d3-418b-ba45-f8f2e1e54baf",
               "name": "Booking updated",
               "originalRequest": {
                 "url": {
@@ -1105,7 +1105,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "b198db9e-45e2-4fd0-b9fd-862e65716c36",
+              "id": "7a0bcf27-194d-452a-af30-6002eb83ae57",
               "name": "Invalid input",
               "originalRequest": {
                 "url": {
@@ -1162,7 +1162,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "330715ad-9503-4da8-ad99-88540e0691b3",
+              "id": "6c2be018-1825-459b-9ddb-cca950a2fe18",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -1219,7 +1219,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "71476e1f-3c6d-4e45-8a61-238da8aaff04",
+              "id": "81c70114-b543-4b57-9332-8b2173aba135",
               "name": "Booking not found",
               "originalRequest": {
                 "url": {
@@ -1282,7 +1282,7 @@
           }
         },
         {
-          "id": "ff0d5dd3-f1aa-4b2b-b644-6f95f73461c9",
+          "id": "ccca9501-1017-414e-b90c-8f0ade0e6281",
           "name": "Delete a booking",
           "request": {
             "name": "Delete a booking",
@@ -1321,7 +1321,7 @@
           },
           "response": [
             {
-              "id": "1bfb4bc7-900b-4c8b-b9b7-af5db5092423",
+              "id": "165609ac-c9c4-4a76-b613-7fbf1431907d",
               "name": "Booking deleted",
               "originalRequest": {
                 "url": {
@@ -1370,7 +1370,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "752959dc-89ea-4699-a6e2-edc0d8485bf3",
+              "id": "a4d37b48-6255-4f3c-a88e-e3df49b0ca52",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -1419,7 +1419,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "e4cabcbf-fece-424a-a80b-440892d40029",
+              "id": "ef597006-d779-4274-b483-b8517eb66621",
               "name": "Booking not found",
               "originalRequest": {
                 "url": {
@@ -1474,7 +1474,7 @@
           }
         },
         {
-          "id": "ac4212f5-5e7e-4a39-80c0-2d33475366ae",
+          "id": "5e1ae986-b262-4466-a3b2-227c33b84f21",
           "name": "Get available rooms by date",
           "request": {
             "name": "Get available rooms by date",
@@ -1518,7 +1518,7 @@
           },
           "response": [
             {
-              "id": "e719440b-b784-45a8-9d81-1f8e20652a60",
+              "id": "18754e73-f94c-42aa-8136-9269791915f8",
               "name": "Available rooms",
               "originalRequest": {
                 "url": {
@@ -1568,7 +1568,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "8531c717-b933-44c0-bca6-b56a11771238",
+              "id": "2adc04b0-c3f2-4125-a7c3-a1d62f0e3794",
               "name": "Invalid date format",
               "originalRequest": {
                 "url": {
@@ -1618,7 +1618,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "be42a09d-34a6-4364-803a-02f2c940f4dc",
+              "id": "dccf54bc-fdfc-43f1-a4cb-041ead246d1c",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -1674,7 +1674,7 @@
           }
         },
         {
-          "id": "7731bb30-361a-4e79-9a7a-1f3756dd2e73",
+          "id": "b3d546a9-5d8c-490f-a13b-2757bc3d7aa9",
           "name": "Get total revenue by month",
           "request": {
             "name": "Get total revenue by month",
@@ -1712,7 +1712,7 @@
           },
           "response": [
             {
-              "id": "55cf8bc6-5773-4ea2-878e-8afea8df4ad9",
+              "id": "21ba2069-29d3-4e3f-9506-cd3d2b9ea4ee",
               "name": "Revenue data",
               "originalRequest": {
                 "url": {
@@ -1758,7 +1758,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "bb253180-6dea-4677-bbe9-53a34e091bd5",
+              "id": "2080c090-674a-43b4-b0eb-783203b4f7ae",
               "name": "Invalid month format",
               "originalRequest": {
                 "url": {
@@ -1804,7 +1804,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "d0a557f0-a37b-4401-ba6a-9e33460d9101",
+              "id": "c659ca2b-7e65-4d82-9490-b2a54d85e2a9",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -1859,7 +1859,7 @@
       "event": []
     },
     {
-      "id": "7e6d5eb2-bcf2-4fef-acc6-3385cbfdebba",
+      "id": "e5b040a4-eafd-411a-ac39-90e81ac89b8c",
       "name": "Guests",
       "description": {
         "content": "Guest management",
@@ -1867,7 +1867,7 @@
       },
       "item": [
         {
-          "id": "7468ca48-aa42-40d4-aacc-79b2eff6eb22",
+          "id": "c6a732b2-8611-4754-8f6f-9a2051778b59",
           "name": "Get all guests",
           "request": {
             "name": "Get all guests",
@@ -1897,7 +1897,7 @@
           },
           "response": [
             {
-              "id": "ec0fc7bd-5ebf-4f4a-b0b1-ffd9095f27c3",
+              "id": "55715f04-4c64-44f8-9d00-34fed0ed6ff1",
               "name": "List of all guests",
               "originalRequest": {
                 "url": {
@@ -1937,7 +1937,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "36c97e36-642d-4c44-b40c-e6812e52b5f2",
+              "id": "46a454bf-c0f2-4dbf-a862-948ad5df0f1d",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -1983,7 +1983,7 @@
           }
         },
         {
-          "id": "6902a70a-4a19-435c-bc06-57ab7cfe0963",
+          "id": "4339c8d8-61ff-41e4-b244-89e29eb5f587",
           "name": "Create new guest",
           "request": {
             "name": "Create new guest",
@@ -2028,7 +2028,7 @@
           },
           "response": [
             {
-              "id": "70bd9427-d113-4b13-af0b-feba6b77d43a",
+              "id": "75df9b1b-350f-482e-9ef9-85832342d29c",
               "name": "Guest created",
               "originalRequest": {
                 "url": {
@@ -2076,7 +2076,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "f93b2afd-5bc4-4331-ab66-208abbadcc14",
+              "id": "00185834-809d-48b3-8821-d80e524ee15e",
               "name": "Invalid input",
               "originalRequest": {
                 "url": {
@@ -2124,7 +2124,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "f2f4bf5e-498c-475f-a7ef-920ea862743b",
+              "id": "f4d8ee7f-fd53-4f9b-92c8-e6ff4c44d3e2",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -2178,7 +2178,7 @@
           }
         },
         {
-          "id": "feaecb06-03fe-4abd-8b41-9314c25cfd16",
+          "id": "6740d083-6ab7-4265-ae2c-c97ad53a1b1f",
           "name": "Get guest by ID",
           "request": {
             "name": "Get guest by ID",
@@ -2217,7 +2217,7 @@
           },
           "response": [
             {
-              "id": "2fe4b895-f831-4637-a684-e149191dcbbc",
+              "id": "9528c309-7656-4bd7-b7db-cb0f6cfc2d34",
               "name": "Guest found",
               "originalRequest": {
                 "url": {
@@ -2266,7 +2266,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "b6d1e6fb-2bc2-40af-a8b2-b0b87e9f0742",
+              "id": "56e381a0-38ca-4b60-9292-61e155e49594",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -2315,7 +2315,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "5ce72089-bb35-40b7-aae9-c1959ecad6c4",
+              "id": "cf290294-e0cb-4802-843f-56ebe74e7e84",
               "name": "Guest not found",
               "originalRequest": {
                 "url": {
@@ -2370,7 +2370,7 @@
           }
         },
         {
-          "id": "8eced722-0b1f-4b1c-ae0d-1b0da0b9cb55",
+          "id": "ebf6429a-7ad2-47d0-a0f6-99292a85e276",
           "name": "Update guest",
           "request": {
             "name": "Update guest",
@@ -2424,7 +2424,7 @@
           },
           "response": [
             {
-              "id": "3f16c1a6-bff5-4bcf-a0e8-1c5b33b5204d",
+              "id": "40e85953-4c5b-4fac-9345-39093b07d90a",
               "name": "Guest updated",
               "originalRequest": {
                 "url": {
@@ -2481,7 +2481,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "5bb5e606-bb58-46fe-880d-5eb09dbf46b7",
+              "id": "8c2d7a1c-ea8d-4b0f-a736-58ea5e95a073",
               "name": "Invalid input",
               "originalRequest": {
                 "url": {
@@ -2538,7 +2538,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "2ad6dd89-5a90-498b-bd0c-71764e0004bb",
+              "id": "7b757a96-9682-4ebd-9a61-c1ac4083053c",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -2595,7 +2595,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "fb2020eb-fb1c-42bc-a089-73e1c9355ab5",
+              "id": "90a7e3dd-0b5f-47e7-aa2e-f7e2f5aace3a",
               "name": "Guest not found",
               "originalRequest": {
                 "url": {
@@ -2658,7 +2658,7 @@
           }
         },
         {
-          "id": "2bc2467b-74c4-4279-8adc-a292c3bbe9a4",
+          "id": "18f80c9c-a332-48d2-aa9e-e373d211673d",
           "name": "Delete a guest",
           "request": {
             "name": "Delete a guest",
@@ -2697,7 +2697,7 @@
           },
           "response": [
             {
-              "id": "8368ad41-5532-421d-a2b6-08697ee6e407",
+              "id": "da230e9d-9bdb-4227-a8f6-f2c2f923ac53",
               "name": "Guest deleted",
               "originalRequest": {
                 "url": {
@@ -2746,7 +2746,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "6aaf94dc-60e9-45ae-9b4c-3e746b34f612",
+              "id": "1726df99-91b8-47d8-bbf0-4ee1e65997bd",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -2795,7 +2795,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "697ddcab-4c20-4245-99b3-f021f3a39fb0",
+              "id": "c5421ac7-f9c2-4c7e-a887-73a91451a72c",
               "name": "Guest not found",
               "originalRequest": {
                 "url": {
@@ -2848,12 +2848,222 @@
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           }
+        },
+        {
+          "id": "f0a0a404-1fa8-4ca7-b4dc-8125e226eed4",
+          "name": "Get number of bookings for a guest",
+          "request": {
+            "name": "Get number of bookings for a guest",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "guests",
+                ":id",
+                "bookings",
+                "count"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<integer>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "e07ab116-f058-4683-b087-2f2cc903d5ce",
+              "name": "Booking count returned",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "guests",
+                    ":id",
+                    "bookings",
+                    "count"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"count\": -89583096\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1e7c79fe-6f6c-48a1-8409-022ccfa966cd",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "guests",
+                    ":id",
+                    "bookings",
+                    "count"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "df934d4e-6d04-4474-903e-e273923b0227",
+              "name": "Guest not found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "guests",
+                    ":id",
+                    "bookings",
+                    "count"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<integer>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
         }
       ],
       "event": []
     },
     {
-      "id": "4e06c961-ca14-4ec5-a933-ed3ed0ebf32e",
+      "id": "b17ef766-c0ae-4cd0-adf1-2dd70b6ad6b6",
       "name": "Rooms",
       "description": {
         "content": "Room management",
@@ -2861,7 +3071,7 @@
       },
       "item": [
         {
-          "id": "833d93d7-42b4-470c-9544-4329e68fb4c9",
+          "id": "0cda4222-d39a-49ff-9d16-6ae183869147",
           "name": "Get all rooms",
           "request": {
             "name": "Get all rooms",
@@ -2891,7 +3101,7 @@
           },
           "response": [
             {
-              "id": "e9e5d966-cc52-46ae-814f-b4ac1f97e2d2",
+              "id": "486b2171-2e9f-4443-b875-5a300f922269",
               "name": "List of all rooms",
               "originalRequest": {
                 "url": {
@@ -2931,7 +3141,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "a8598499-4b77-4fb1-8e96-e7ce7f1ac364",
+              "id": "4e41db0f-21d6-494c-a284-99879920e18a",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -2977,7 +3187,7 @@
           }
         },
         {
-          "id": "babcbb7d-b3ef-493d-bd02-5e344c03d3fc",
+          "id": "bb480123-19fb-436f-b5e9-c7fdb6a73962",
           "name": "Create new room",
           "request": {
             "name": "Create new room",
@@ -3022,7 +3232,7 @@
           },
           "response": [
             {
-              "id": "b66d8f6e-04bc-4b34-aa8a-bcfeaeaa8bcb",
+              "id": "da2dee40-99d0-41b6-8d0d-a65b1aee906e",
               "name": "Room created",
               "originalRequest": {
                 "url": {
@@ -3070,7 +3280,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "7ebf6f2c-46c3-4d6d-a3af-d7ffa2f52b4c",
+              "id": "499ea3ab-7230-4212-a933-ff5de3af2415",
               "name": "Invalid input",
               "originalRequest": {
                 "url": {
@@ -3118,7 +3328,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "1069f2a3-3881-48f8-aa67-876f518657c0",
+              "id": "57aa12ba-58b3-4de3-8b65-c7bb41c826fd",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -3172,7 +3382,7 @@
           }
         },
         {
-          "id": "c96a26fd-30d0-4c87-a25a-eb2cdabe52a2",
+          "id": "8b886bb5-ee8e-4412-9e35-3c648847ebda",
           "name": "Get room by ID",
           "request": {
             "name": "Get room by ID",
@@ -3211,7 +3421,7 @@
           },
           "response": [
             {
-              "id": "2a96c24b-e373-415b-9415-06517782f977",
+              "id": "4dab3a61-d721-45ee-b05b-b5dc8e77eaaf",
               "name": "Room found",
               "originalRequest": {
                 "url": {
@@ -3260,7 +3470,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "90bb0e5d-71d3-4d11-ba5f-9baedf6baaa1",
+              "id": "8885f527-3a7c-404b-b169-7f58da0e531a",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -3309,7 +3519,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "21770e20-2caf-4e99-bdf0-57d33c4eb62e",
+              "id": "103be6c2-401f-46bb-a106-032364524f0f",
               "name": "Room not found",
               "originalRequest": {
                 "url": {
@@ -3364,7 +3574,7 @@
           }
         },
         {
-          "id": "1328f320-6115-42a8-8081-c01b5b1a05d5",
+          "id": "ffe7d63b-dcf1-42ad-bc6b-9e6666bfbbea",
           "name": "Update room",
           "request": {
             "name": "Update room",
@@ -3418,7 +3628,7 @@
           },
           "response": [
             {
-              "id": "76b8d8ab-f47f-417a-b341-68b1bd909d49",
+              "id": "f9f5ab2f-e94a-4dd7-b82f-1fdc4942714c",
               "name": "Room updated",
               "originalRequest": {
                 "url": {
@@ -3475,7 +3685,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "3c2e4a00-5113-40d2-8afa-b2d47581de23",
+              "id": "b588470e-533c-4fbd-8335-e857259312c2",
               "name": "Invalid input",
               "originalRequest": {
                 "url": {
@@ -3532,7 +3742,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "48712e26-d48f-40ff-87e1-99d8a1c95d19",
+              "id": "e561847c-871f-464a-a2fc-25f4c8029b5f",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -3589,7 +3799,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "173f2c59-5b24-411d-8069-f6a094fa059f",
+              "id": "39908fa0-1b20-41d3-ba14-7ab990e3c34b",
               "name": "Room not found",
               "originalRequest": {
                 "url": {
@@ -3652,7 +3862,7 @@
           }
         },
         {
-          "id": "0b193828-c531-4b67-bb6a-4f627332ff77",
+          "id": "347af4ed-35b7-4d2e-b0b5-ec2e1712b34a",
           "name": "Delete a room",
           "request": {
             "name": "Delete a room",
@@ -3691,7 +3901,7 @@
           },
           "response": [
             {
-              "id": "17f16fe4-469e-4062-9cd9-66866891a924",
+              "id": "9e4f2833-fb72-4f32-9938-f9f1366a7dde",
               "name": "Room deleted",
               "originalRequest": {
                 "url": {
@@ -3740,7 +3950,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "42365122-0344-4772-8204-814dfd87f5b4",
+              "id": "e675b023-d889-40cd-9bda-448cee1294f2",
               "name": "Unauthorized",
               "originalRequest": {
                 "url": {
@@ -3789,7 +3999,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "f9b91011-8280-45a5-9324-de31c3d27a82",
+              "id": "60279f13-2993-401d-9ddc-e3f580f2f1c8",
               "name": "Room not found",
               "originalRequest": {
                 "url": {
@@ -3865,7 +4075,7 @@
     ]
   },
   "info": {
-    "_postman_id": "07cfa94c-bb7f-4e22-ab48-a08195f3056d",
+    "_postman_id": "9150f8c9-1a7f-44e0-b1c2-871f7a1743af",
     "name": "Hotel Management API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {

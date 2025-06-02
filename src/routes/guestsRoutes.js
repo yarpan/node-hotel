@@ -148,4 +148,35 @@ router.put('/:id', guestsController.update);
  */
 router.delete('/:id', guestsController.remove);
 
+/**
+ * @swagger
+ * /api/guests/{id}/bookings/count:
+ *   get:
+ *     tags: [Guests]
+ *     summary: Get number of bookings for a guest
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: Booking count returned
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 count:
+ *                   type: integer
+ *       404:
+ *         description: Guest not found
+ *       401:
+ *         description: Unauthorized
+ */
+router.get('/:id/bookings/count', guestsController.getBookingCount);
+
 module.exports = router;

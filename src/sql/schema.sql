@@ -1,4 +1,4 @@
-
+-- guests
 CREATE TABLE IF NOT EXISTS guests (
     id SERIAL PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS guests (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
+-- rooms
 CREATE TABLE IF NOT EXISTS rooms (
     id SERIAL PRIMARY KEY,
     room_number VARCHAR(10) UNIQUE NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS rooms (
     is_active BOOLEAN DEFAULT TRUE
 );
 
-
+-- bookings
 CREATE TABLE IF NOT EXISTS bookings (
     id SERIAL PRIMARY KEY,
     guest_id INTEGER REFERENCES guests(id) ON DELETE CASCADE,
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS bookings (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
+-- users
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   username VARCHAR(100) UNIQUE NOT NULL,
