@@ -1,39 +1,45 @@
 const request = require('supertest');
-const app = require('../../src/server'); 
-const db = require('../../src/db');
+const db = require('../../src/config/db');
+const { app, server } = require('../../src/server');
+let token;
+
+const testUser = {
+  username: 'testuser',
+  password: 'password123'
+};
 
 describe('E2E: Auth flow', () => {
-  const testUser = {
-    name: 'Test User',
-    email: 'testuser@example.com',
-    password: 'testpassword123'
-  };
 
   beforeAll(async () => {
-    await db.query('DELETE FROM users WHERE email = $1', [testUser.email]);
+    await db.query('DELETE FROM refresh_tokens');
+    await db.query('DELETE FROM users WHERE username = $1', [testUser.username]);
   });
+
 
   afterAll(async () => {
-    await db.query('DELETE FROM users WHERE email = $1', [testUser.email]);
+    await db.query('DELETE FROM refresh_tokens');
+    await db.query('DELETE FROM users WHERE username = $1', [testUser.username]);
     await db.end();
+    server.close();
   });
 
-  let token;
 
   it('should register a new user', async () => {
     const res = await request(app)
-      .post('/api/users')
+      .post('/api/auth/register')
       .send(testUser);
 
     expect(res.statusCode).toBe(201);
     expect(res.body).toHaveProperty('id');
+    expect(res.body).toHaveProperty('username', testUser.username);
   });
+
 
   it('should login and return JWT token', async () => {
     const res = await request(app)
-      .post('/api/login')
+      .post('/api/auth/login')
       .send({
-        email: testUser.email,
+        username: testUser.username,
         password: testUser.password
       });
 
@@ -42,18 +48,20 @@ describe('E2E: Auth flow', () => {
     token = res.body.accessToken;
   });
 
+
   it('should access protected route with token', async () => {
     const res = await request(app)
-      .get('/api/profile')
+      .get('/api/guests') 
       .set('Authorization', `Bearer ${token}`);
 
     expect(res.statusCode).toBe(200);
-    expect(res.body).toHaveProperty('email', testUser.email);
+    expect(Array.isArray(res.body)).toBe(true); 
   });
+
 
   it('should return 401 without token', async () => {
-    const res = await request(app).get('/api/profile');
+    const res = await request(app).get('/api/guests');
     expect(res.statusCode).toBe(401);
   });
-});
 
+});

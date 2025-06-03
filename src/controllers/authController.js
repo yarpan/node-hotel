@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 const db = require('../config/db');
 const { generateAccessToken, generateRefreshToken } = require('../config/jwt');
 
+
 exports.register = async (req, res) => {
   try {
     const { username, password } = req.body;
@@ -16,9 +17,11 @@ exports.register = async (req, res) => {
 
     res.status(201).json(result.rows[0]);
   } catch (err) {
+    console.error('Register error:', err);
     res.status(500).json({ error: err.message });
   }
 };
+
 
 exports.login = async (req, res) => {
   try {
@@ -43,9 +46,11 @@ exports.login = async (req, res) => {
 
     res.json({ accessToken, refreshToken });
   } catch (err) {
+    console.error('Login error:', err);
     res.status(500).json({ error: err.message });
   }
 };
+
 
 exports.refreshToken = async (req, res) => {
   try {
@@ -66,6 +71,7 @@ exports.refreshToken = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
 
 exports.logout = async (req, res) => {
   try {

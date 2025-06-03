@@ -86,7 +86,7 @@ exports.getBookingCount = async (req, res) => {
     );
 
     const count = parseInt(result.rows[0].count, 10);
-    res.json({ count });
+    res.json({ guestId: parseInt(id, 10), bookingCount: count });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
