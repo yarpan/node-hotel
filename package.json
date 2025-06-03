@@ -6,11 +6,10 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "cross-env NODE_ENV=development nodemon src/server.js",
-    "test": "cross-env NODE_ENV=test jest",
     "test:unit": "cross-env NODE_ENV=test jest --config=jest.unit.config.js",
     "test:integration": "cross-env NODE_ENV=test jest --config=jest.integration.config.js",
     "test:e2e": "cross-env NODE_ENV=test jest --config=jest.e2e.config.js",
-    "generate": "node utils/generate-docs.js",
+    "docs:generate": "node utils/generate-docs.js",
     "swagger-to-postman": "openapi2postmanv2 -s docs/swagger.json -o docs/postman_collection.json -p"
   },
   "keywords": [],
