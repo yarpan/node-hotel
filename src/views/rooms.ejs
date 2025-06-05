@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<h2>Rooms</h2>
+
+<ul>
+  <% if (rooms.length === 0) { %>
+    <li>No rooms found.</li>
+  <% } else { %>
+    <% rooms.forEach(room => { %>
+      <li>Room <%= room.number %> – <%= room.type %>, $<%= room.price %>/night</li>
+    <% }) %>
+  <% } %>
+</ul>
+
+<%- include('partials/footer') %>

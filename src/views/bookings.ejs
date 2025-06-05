@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+<h2>Bookings</h2>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Guest</th>
+      <th>Room</th>
+      <th>Check-in</th>
+      <th>Check-out</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% bookings.forEach(booking => { %>
+      <tr>
+        <td><%= booking.guest_name %></td>
+        <td><%= booking.room_number %></td>
+        <td><%= booking.check_in_date %></td>
+        <td><%= booking.check_out_date %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<a href="/dashboard">⬅️ Back to Dashboard</a>
+
+<%- include('partials/footer') %>

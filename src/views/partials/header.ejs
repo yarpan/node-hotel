@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <% if (session?.token) { %>
+                <a href="/dashboard">Dashboard</a> |
+                <a href="/bookings">Bookings</a> |
+                <a href="/bookings/new">New Booking</a> |
+                <a href="/guests">Guests</a> |
+                <a href="/rooms">Rooms</a> |
+                <a href="/logout">Logout</a>
+                <% } else { %>
+                    <a href="/login">Login</a> |
+                    <a href="/register">Register</a>
+                    <% } %>
+        </nav>
+        <hr />
+    </header>
