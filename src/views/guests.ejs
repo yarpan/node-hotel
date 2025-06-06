@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<h2>Guests</h2>
+
+<ul>
+  <% if (guests.length === 0) { %>
+    <li>No guests found.</li>
+  <% } else { %>
+    <% guests.forEach(guest => { %>
+      <li><%= guest.name %> – <%= guest.email %></li>
+    <% }) %>
+  <% } %>
+</ul>
+
+<%- include('partials/footer') %>
